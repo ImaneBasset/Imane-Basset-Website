@@ -2,6 +2,21 @@
   command = "npm run build"
   publish = "dist"
 
+# imanebasset.co.uk is an alias; send it to the primary domain so the two
+# don't serve duplicate content. Must come before the SPA rule below —
+# Netlify applies the first match.
+[[redirects]]
+  from = "https://imanebasset.co.uk/*"
+  to = "https://imanebasset.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.imanebasset.co.uk/*"
+  to = "https://imanebasset.com/:splat"
+  status = 301
+  force = true
+
 # React Router handles routing client-side, so every path must serve
 # index.html instead of 404ing at the CDN.
 [[redirects]]
