@@ -15,18 +15,18 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 py-20">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
+        <div className="max-w-5xl mx-auto text-center animate-fade-in-up">
           <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
             <span className="text-sm font-medium text-primary">
               Computer Science Student
             </span>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
-            <img 
-              src={profilePhoto} 
-              alt="Imane Basset" 
-              className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-glow ring-4 ring-primary/20"
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+            <img
+              src={profilePhoto}
+              alt="Imane Basset"
+              className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-2xl object-cover shadow-glow ring-4 ring-primary/20"
             />
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               <span className="gradient-text">Imane Basset</span>
